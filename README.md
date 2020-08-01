@@ -1,3 +1,4 @@
-building-angular
+pixiedustarts
 ================
-This repo is the code implementation of my angularjs and nodejs exercises. Feel free to modify or adding stuffs.
+Code repository for pixiedust arts project. Created on Sunday August 2, 2020
+Will Update more.

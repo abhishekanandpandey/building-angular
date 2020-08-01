@@ -1,0 +1,25 @@
+{
+  "name": "pixiedustarts",
+  "version": "1.0.0",
+  "description": "Pixiedust Arts Project Repo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhishekanandpandey/pixiedustarts.git"
+  },
+  "keywords": [
+    "Arts",
+    "Ecommers",
+    "onlines",
+    "shopping"
+  ],
+  "author": "Abhishek Pandey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhishekanandpandey/pixiedustarts/issues"
+  },
+  "homepage": "https://github.com/abhishekanandpandey/pixiedustarts#readme"
+}
