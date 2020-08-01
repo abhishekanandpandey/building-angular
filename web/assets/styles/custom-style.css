@@ -1,0 +1,61 @@
+/* Custom Stylesheet for pixiedust arts */
+
+h2.block {
+    margin: 0 auto 20px auto;
+    padding: 0 20px 12px 20px;
+    float: none !important;
+    text-align: center;
+    overflow: hidden;
+    display: block;
+    z-index: 1;
+    position: relative;
+}
+
+h2.block:before {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    margin-top: -4px;
+    width: 70%;
+    height: 1px;
+    content: '';
+    display: block;
+    z-index: 0;
+    border-width: 1px;
+    border-style: dotted;
+    border-color: #cccccc;
+    box-sizing: unset;
+}
+
+h2.block:after {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    width: 70%;
+    height: 1px;
+    content: '';
+    display: block;
+    z-index: 0;
+    border-width: 1px;
+    border-style: dotted;
+    border-color: #cccccc;
+    box-sizing: unset;
+}
+
+h2.block span.subtitle {
+    color: #c4af95;
+    -webkit-transition: opacity 0.24s ease-in-out;
+    -moz-transition: opacity 0.24s ease-in-out;
+    transition: opacity 0.24s ease-in-out;
+    padding-bottom: 6px;
+    display: block;
+    position: relative;
+    z-index: 2; 
+}
+
+h2.block .maintitle {
+    float: none;
+    padding: 0 45px 0 45px;
+    position: relative;
+    z-index: 1; 
+}
