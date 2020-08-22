@@ -9,13 +9,13 @@ const isDev = process.env.NODE_ENV === 'development';
 const weboackConfig = {
     entry: {
         polyfill: '@babel/polyfill',
-        main: helpers.root('src', 'main')
+        main: helpers.root('web', 'main')
     },
     resolve: {
         extensions: ['.js', '.vue'],
         alias: {
             'vue$': isDev ? 'vue/dist/vue.runtime.js' : 'vue/dist/vue.runtime.min.js',
-            '@': helpers.root('src')
+            '@': helpers.root('web')
         }
     },
     module: {
@@ -23,12 +23,12 @@ const weboackConfig = {
             {
                 test: /\.vue$/,
                 loader: 'vue-loader',
-                include: [helpers.root('src')]
+                include: [helpers.root('web')]
             },
             {
                 test: /\.js$/,
                 loader: 'babel-loader',
-                include: [helpers.root('src')]
+                include: [helpers.root('web')]
             },
             {
                 test: /\.css$/,

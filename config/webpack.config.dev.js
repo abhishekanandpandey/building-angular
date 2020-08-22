@@ -29,8 +29,8 @@ const webpackConfig = merge(commonConfig, {
     ],
     devServer: {
         compress: true,
-        host: "0.0.0.0",
         historyApiFallback: true,
+        host: '0.0.0.0',
         hot: true,
         open: true,
         overlay: true,

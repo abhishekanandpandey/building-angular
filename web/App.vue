@@ -1,56 +1,12 @@
 <template>
-  <div id="app">
-    <pixie-header></pixie-header>
-    <div class="page-view">
-      <router-view></router-view>
-    </div>
-    <pixie-footer></pixie-footer>
-  </div>
+<div>
+<router-view/>
+</div>
+  
 </template>
 
 <script>
-import PixieHeader from './component/PixieHeader';
-import PixieFooter from './component/PixieFooter';
-
 export default {
-  name: 'app',
-  components: {
-    PixieHeader,
-    PixieFooter
-  },
-
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
+  name: 'pixiedust',
 }
 </script>
-
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
-</style>

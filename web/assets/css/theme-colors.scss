@@ -1,0 +1,229 @@
+:root {
+    /* Basic Colors */
+    --inverse-text: hsl(0, 0%, 100%);
+    --clear: transparent;
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(0, 0%, 89%);
+    --medium-grey: hsl(0, 0%, 82.7%);
+    --grey: hsl(0, 0%, 61.2%);
+    --dark-grey: hsl(0, 0%, 32%);
+    --midnight: hsl(0, 0%, 20%);
+    --charcoal: hsl(0, 0%, 7%);
+    --black: hsl(0, 0%, 0%);
+    --light-purple: hsl(241, 57%, 63%);
+    --seafoam: hsl(186, 96%, 27%);
+    --blue: hsl(207, 100%, 42%);
+    --purple: hsl(265, 37%, 48%);
+    --green: hsl(143, 79%, 30%);
+    --moss: hsl(165, 18%, 35%);
+    --deep-orange: hsl(21, 85%, 43%);
+    --graphite: hsl(215, 14%, 37%);
+    --social: hsl(215, 82%, 50%);
+    --input-hover: hsl(207, 71%, 75%);
+    --tab-hover: hsl(200, 65%, 95%);
+    --loading-overlay: hsla(0, 0%, 0%), 0.25;
+    --vivid-pink: hsl(335, 93%, 54%);
+    --middle-pink: hsl(342, 59%, 53%);
+    --cyan: hsl(178, 100%, 31%);
+    --turquoise: hsl(193, 100%, 27%);
+    --dark-turquoise: hsl(196 100%, 22%);
+
+    /* Structure */
+    --col-1: 8.33%;
+    --col-2: 16.66;
+    --col-3: 25%;
+    --col-4: 33.33%;
+    --col-5: 41.66%;
+    --col-6: 50%;
+    --col-7: 588.33%;
+    --col-8: 66.66%;
+    --col-9: 75%;
+    --col-10: 83.33%;
+    --col-11: 91.66%;
+    --col-12: 100%;
+
+    --margin-xs: 0.25rem;
+    --margin-sm: 0.5rem;
+    --margin-md: 1rem;
+    --margin-lg: 1.5rem;
+    --margin-xl: 2rem;
+
+    --padding-xs: 0.25rem;
+    --padding-sm: 0.5rem;
+    --padding-md: 1rem;
+    --padding-lg: 1.5rem;
+    --padding-xl: 2rem;
+    
+    --auto: auto;
+    --custom-margin: var(--margin);
+    --custom-padding: var(--padding);
+
+    --top-bar-height: 40px;
+    --header-height: 60px;
+    --footer-height: 60px;
+    --main-container-height: calc(100vh - (var(--top-bar-height) + var(--header-height) + var(--footer-height)));
+
+    /* Typography */
+    --text-color: hsl(0, 0%, 32%);
+
+    /* Basics */
+    --highlight: hsl(201, 90%, 41%);
+    
+    /* Layout */
+    --main-background: var(--white);
+    --main-off-background: hsl(0, 0%, 97%);
+    --navbar-background: var(--white);
+    --navbar-link-color: var(--charcoal);
+    --navbar-link-hover: hsla(208, 100%, 62%, 0.16);
+    --navbar-link-selected: hsl(0, 0%, 90%);
+    --border-color: hsl(220, 8.8%, 86%);
+    --header-background: var(--white);
+    --header-text: var(--charcoal);
+
+    /* Table */
+    --table-header: var(--white);
+    --table-header-color: var(--text-color);
+    --grid-controls: var(--navbar-background);
+    --odd-cell: hsl(220, 100%, 98%);
+    --even-cell: var(--white);
+    --table-row-hover: hsl(217, 84%, 93%);
+    --selected-row-background: var(213, 32%, 63%);
+    --selected-row-text: var(--white);
+    --grand-total-text: var(--black);
+
+    /* Cards */
+    --tile-background: var(--white);
+    --card-background:: var(--white);
+    --widget-background: var(--white);
+
+    /* Button*/
+    --disabled-button-background: hsl(0, 0%, 95%);
+    --disabled-button-text: var(--disabled-text);
+
+    --primary-button-background: hsl(207.6, 82.5%, 52.9%);
+    --primary-button-active-background: hsl(207.6, 73.5%, 40%);
+    --primary-button-text: var(--white);
+    --primary-button-hover-background: hsl(207, 94, 32);
+
+    --default-button-background: hsl(207.6, 82.5%, 52.9%);
+    --default-button-active-background: hsl(207.6, 73.5%, 40%);
+    --default-button-text: var(--white);
+    --default-button-hover-background: hsl(207, 94, 32);
+
+    --success-button-background: hsl(207.6, 82.5%, 52.9%);
+    --success-button-active-background: hsl(207.6, 73.5%, 40%);
+    --success-button-text: var(--white);
+    --success-button-hover-background: hsl(207, 94, 32);
+
+    --warning-button-background: hsl(207.6, 82.5%, 52.9%);
+    --warning-button-active-background: hsl(207.6, 73.5%, 40%);
+    --warning-button-text: var(--white);
+    --warning-button-hover-background: hsl(207, 94, 32);
+
+    --danger-button-background: hsl(207.6, 82.5%, 52.9%);
+    --danger-button-active-background: hsl(207.6, 73.5%, 40%);
+    --danger-button-text: var(--white);
+    --danger-button-hover-background: hsl(207, 94, 32);
+
+    /* Modals */
+    --modal-mask: hsla(0, 0%, 0%, 0.5);
+    --modal-header-grey: hsl(0, 0%, 94%);
+    --modal-header: var(--white);
+    --modal-header-text: var(--text-color);
+    --modal-body: var(--white);
+    --modal-body-text: var(--text-color);
+
+    /* Corner */
+    --no-radius: 0;
+    --radius-xs: 0.10rem;
+    --radius-small: 0.25rem;
+    --radius-medium: 0.5rem;
+    --radius-large: 1.5625rem;
+    --circle: 50%;
+
+    /* Forms */
+    --input-background: hsla(0, 0%, 0%, 0.05);
+    --select-background: var(--navbar-background);
+    --focus-border: hsl(212.4, 72.4%, 58.8%);
+    --input-disabled: hsla(0, 0%, 0%, 0.03);
+    --disabed-text: hsla(0, 0%, 70%, 1);
+}
+
+[theme="dark"] {
+    /* Typography */
+    --text-color: hsl(0, 0%, 89%);
+
+    /* Basics */
+    --highlight: hsl(208, 100%, 62%);
+    
+    /* Layout */
+    --main-background: hsl(0, 0%, 11%);
+    --main-off-background: hsl(0, 0%, 15%);
+    --navbar-background: hsl(200, 4%, 15%);
+    --navbar-link-color: hsl(207, 6%, 63%);
+    --navbar-link-hover: hsla(208, 100%, 62%, 0.16);
+    --navbar-link-selected: hsl(0, 0%, 30%);
+    --border-color: var(--dark-grey);
+    --header-background: var(--navbar-background);
+    --header-text: var(--text-color);
+
+    /* Table */
+    --table-header: var(--navbar-background);
+    --table-header-color: var(--text-color);
+    --grid-controls: var(--navbar-background);
+    --odd-cell: hsl(0, 0%, 13%);
+    --even-cell: var(--main-background);
+    --table-row-hover: hsl(0, 0%, 46.7%);
+    --selected-row-background: var(213, 32%, 63%);
+    --selected-row-text: var(--white);
+    --grand-total-text: var(--black);
+
+    /* Cards */
+    --tile-background: hsl(210, 2%, 20%);
+    --card-background: hsl(210, 2%, 20%);
+    --widget-background: hsl(210, 2%, 20%);
+
+    /* Button*/
+    --disabled-button-background: hsl(0, 0%, 95%);
+    --disabled-button-text: var(--disabled-text);
+
+    --primary-button-background: hsl(207.6, 82.5%, 52.9%);
+    --primary-button-active-background: hsl(207.6, 73.5%, 40%);
+    --primary-button-text: var(--white);
+    --primary-button-hover-background: hsl(207, 73.7%, 46.3%);
+
+    --default-button-background: hsl(207.6, 82.5%, 52.9%);
+    --default-button-active-background: hsl(207.6, 73.5%, 40%);
+    --default-button-text: var(--white);
+    --default-button-hover-background: hsl(207, 94, 32);
+
+    --success-button-background: hsl(207.6, 82.5%, 52.9%);
+    --success-button-active-background: hsl(207.6, 73.5%, 40%);
+    --success-button-text: var(--white);
+    --success-button-hover-background: hsl(207, 94, 32);
+
+    --warning-button-background: hsl(207.6, 82.5%, 52.9%);
+    --warning-button-active-background: hsl(207.6, 73.5%, 40%);
+    --warning-button-text: var(--white);
+    --warning-button-hover-background: hsl(207, 94, 32);
+
+    --danger-button-background: hsl(207.6, 82.5%, 52.9%);
+    --danger-button-active-background: hsl(207.6, 73.5%, 40%);
+    --danger-button-text: var(--white);
+    --danger-button-hover-background: hsl(207, 94, 32);
+
+    /* Modals */
+    --modal-mask: hsla(255, 255%, 255%, 0.5);
+    --modal-header-grey: hsl(200, 4%, 15%);
+    --modal-header: hsl(200, 4%, 15%);
+    --modal-header-text: var(--text-color);
+    --modal-body: hsl(180, 2%, 13%);
+    --modal-body-text: var(--text-color);
+
+    /* Forms */
+    --input-background: hsla(0, 0%, 0%, 0.05);
+    --select-background: var(--navbar-background);
+    --focus-border: hsl(212.4, 72.4%, 58.8%);
+    --input-disabled: hsla(0, 0%, 0%, 0.03);
+    --disabed-text: hsla(0, 0%, 70%, 1);
+}
