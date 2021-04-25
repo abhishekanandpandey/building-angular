@@ -1,11 +1,19 @@
 <template>
-    <div>
-        <h3> Contact Pixiedust</h3>
+  <main-layout>
+    <div class="view-container">
+        <section>
+          About us 
+        </section>
     </div>
+  </main-layout>
 </template>
 
 <script>
+ import MainLayout from '@/layout/MainLayout';
     export default{
-        name: "Contact"
+        name: "Contact",
+        components: {
+          MainLayout
+        }
     }
 </script>

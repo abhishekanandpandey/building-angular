@@ -1,5 +1,5 @@
 <template>
-    <nav id="sidebar" :class="{'active': active}" aria-label="App Drawer">
+    <nav class="sidebar" aria-label="App Drawer">
         <div class="sidebar-header">
             <h2>Sidebar</h2>
         </div>

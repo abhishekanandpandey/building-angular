@@ -1,29 +1,24 @@
 <template>
-    <div id="app-main">
+    <div class="page-wrapper">
         <app-header></app-header>
-        <div class="container">
-            <div class="page-wrapper">
-               <app-sidebar></app-sidebar>
-            </div>
-            <div class="page-layout">
+         <div class="page-layout">
+                <app-sidebar></app-sidebar>
                 <slot></slot>
             </div>
-        </div>
         <app-footer></app-footer>
     </div>
 </template>
 
 <script>
 import AppHeader from '@/layout/AppHeader';
-import AppSidebar from '@/layout/AppSidebar';
 import AppFooter from '@/layout/Appfooter';
-
+import AppSidebar from '@/layout/AppSidebar'
 export default {
     name: 'MainLayout',
     components: {
         AppHeader,
+        AppFooter,
         AppSidebar,
-        AppFooter
     },
     data() {
         return {

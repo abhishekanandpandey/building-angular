@@ -58,10 +58,9 @@
     --custom-margin: var(--margin);
     --custom-padding: var(--padding);
 
-    --top-bar-height: 40px;
     --header-height: 60px;
     --footer-height: 60px;
-    --main-container-height: calc(100vh - (var(--top-bar-height) + var(--header-height) + var(--footer-height)));
+    --main-container-height: calc(100vh - (var(--header-height) + var(--footer-height)));
 
     /* Typography */
     --text-color: hsl(0, 0%, 32%);
@@ -72,6 +71,7 @@
     /* Layout */
     --main-background: var(--white);
     --main-off-background: hsl(0, 0%, 97%);
+    --body-background: hsl(210, 50%, 98%);
     --navbar-background: var(--white);
     --navbar-link-color: var(--charcoal);
     --navbar-link-hover: hsla(208, 100%, 62%, 0.16);
@@ -87,7 +87,7 @@
     --odd-cell: hsl(220, 100%, 98%);
     --even-cell: var(--white);
     --table-row-hover: hsl(217, 84%, 93%);
-    --selected-row-background: var(213, 32%, 63%);
+    --selected-row-background: hsl(213, 32%, 63%);
     --selected-row-text: var(--white);
     --grand-total-text: var(--black);
 
@@ -136,9 +136,9 @@
     /* Corner */
     --no-radius: 0;
     --radius-xs: 0.10rem;
-    --radius-small: 0.25rem;
-    --radius-medium: 0.5rem;
-    --radius-large: 1.5625rem;
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 1.5625rem;
     --circle: 50%;
 
     /* Forms */
@@ -159,6 +159,7 @@
     /* Layout */
     --main-background: hsl(0, 0%, 11%);
     --main-off-background: hsl(0, 0%, 15%);
+    --body-background: hsl(30, 50%, 2%);
     --navbar-background: hsl(200, 4%, 15%);
     --navbar-link-color: hsl(207, 6%, 63%);
     --navbar-link-hover: hsla(208, 100%, 62%, 0.16);

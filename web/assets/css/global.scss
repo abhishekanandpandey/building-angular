@@ -1,29 +1,74 @@
+.page-layout {
+    display: flex;
+}
 
-app-header {
-    border-bottom: solid 1px var(--border-color);
-    background-color: var(--navbar-background);
-    height: var(--header-height);
+.page-wrapper {
+    min-height: var(--main-container-height);
+}
 
-    .hamburger {
-        font-size: 30px;
-        cursor: pointer;
-        display: inline;
-        color: var(--color);
+.sidebar {
+  width: 325px;
+  border-right: 1px solid #e3e9ef;
+  padding: var(--padding-md);
+  background: var(--main-background);
+}
+
+.view-container {
+  padding: var(--padding-md);
+  width: calc(100% - 325px);
+  min-height: var(--main-container-height);
+}
+section {
+    margin-top: 15px;
+}
+.custom-orders {
+    background: #fff;
+    border-radius: var(--radius-md);
+
+    ul {
+        display: flex;
+        align-items: stretch; /* Default */
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
-    .logo {
-        display: inline;
+    li {
+        display: block;
+        flex: 0 1 auto; /* Default */
+        list-style-type: none;
+        border-right: solid 1px red;
+        width: 25%;
+        height: 175px;
+    }
+
+    li:last-child {
+        border: none;
+    }
+}
+  
+/* Mobile Devices - Phones/Tablets */
+@media only screen and (max-width: 790px) { 
+    .sidebar {
+        display: none;
+    }
+
+    .view-container {
+        width: 100%;
     }
 }
 
-.wrapper {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    min-height: var(--main-container-height);
-    height: 100%;
+@media only screen and (max-width: 720px) { 
+    .custom-orders {
+        ul {
+            display: block;
+        }
+        li {
+            border-right: solid 1px green;
+            width: 100%;
+        }
+    }
 }
 
 .app-footer {
@@ -37,38 +82,7 @@ app-header {
     padding-left: 20px;
 }
 
-/* -- app sidebar --*/
-.page-wrapper {
-    display: flex;
-    position: relative;
-    width: 100%;
-    align-items: stretch;
-    min-height: var(--main-container-height);
-    height: 100%;
-}
-
-#sidebar {
-    min-width: 375px;
-    max-width: 375px;
-    margin-left: -15px;
-    padding: var(--padding-sm);
-    -webkit-transition: all 0.25s;
-    transition: all 0.25s;
-    z-index: 999;
-    background-color: var(--navbar-background);
-    border-right: solid 1px var(--border-color);
-    font-size: 14px;
-    margin-right: 20px;
-}
-
-#sidebar.active {
-    margin-left: -395px;
-    -webkit-transition: all 0.25s;
-    transition: all 0.25s;
-}
-
 /* Toggle Switch */
-
 .switch {
     position: relative;
     display: inline-block;

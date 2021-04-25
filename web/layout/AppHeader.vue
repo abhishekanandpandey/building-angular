@@ -1,26 +1,29 @@
 <template>
-    <header>
-        <nav class="navbar app-header">
-            <div class="logo-container">
-                <div class="hamburger">
-                    <a href="javascript:void(0)" @click="sideNavEvent()">dddd
-                        <i class="fa fa-bars" area-hidden="true" :class="{'rotate': hamburger}"></i>
-                    </a>
+    <header class="nav-wrapper">
+        <div class="grad-bar"></div>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="menu-toggle" id="mobile-menu" :class="{'is-active': isActive}" @click="toggleNav()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
-                <div class="logo">
-                    <a href="javascript:void(0)" class="app-logo" @click.prevent="send('dashboard')"></a>
-                </div>
-                <div class="app-nav">
-                    <span>Put all navigation links here</span>
-                </div>
+                <label>Pixiedust Arts</label>
+            </div>
 
-                <div class="app-user-block">
-                    <span>User icons will come here</span>
-                </div>
+            <ul class="nav" :class="{'mobile-nav': hamburger, 'search': isSearch, 'no-search': !isSearch}">
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#">About</a></li>
+                <li class="nav-item"><a href="#">Product</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+                <i class="fas fa-search" id="search-icon" @click="toggleSearch()">ddd</i>
+                <input class="search-input" type="text" placeholder="Search.." :class="{'search-active': isSearch}">
+            </ul>
+
+            <div class="user-block">
                 <theme-switch></theme-switch>
             </div>
         </nav>
-        <h2> Welcome to Application Header</h2>
     </header>
 </template>
 
@@ -35,16 +38,22 @@ export default {
     data() {
         return {
             hamburger: false,
+            isActive: false,
+            isSearch: false
         }
     },
     methods: {
         send(path) {
             this.$router.push(`/${path}`);
         },
-        sideNavEvent() {
+        toggleNav() {
             this.hamburger = !this.hamburger;
-            this.$root.$emit("hamburger", this.hamburger);
+            this.isActive = !this.isActive;
+        },
+        toggleSearch() {
+            this.isSearch = !this.isSearch;
         }
     }
 }
 </script>
+
