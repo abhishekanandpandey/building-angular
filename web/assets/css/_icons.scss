@@ -1,0 +1,6 @@
+a[href^="mailto:"]:before { content: "\2709"; }
+.phone:before             { content: "\1F6D2"; }
+.important:before         { content: "\27BD"; }
+blockquote:before         { content: "\275D"; }
+blockquote:after          { content: "\275E"; }
+.alert:before             { content: "\26A0"; }

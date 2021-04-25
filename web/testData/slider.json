@@ -1,0 +1,50 @@
+[
+    {
+        "index": "1",
+        "isActive": true,
+        "productId": "p1",
+        "productName": "tiny-ganesh",
+        "heading": "Miniature Shree Ganesh Idol",
+        "infoText":"Some information text related to the Idol of Shree Ganesh Idol",
+        "price":"299 Onwards",
+        "actionButtonText": "View Procuct",
+        "bgcolor": "#1a6fb0",
+        "image":""
+    },
+    {
+        "index": "2",
+        "isActive": true,
+        "productId": "p2",
+        "productName": "up-house",
+        "heading": "Ballon House Magnate",
+        "infoText":"Some information text related to Baloon house Magnet",
+        "price":"500",
+        "actionButtonText": "View Procuct",
+        "bgcolor": "#d79922",
+        "image":""
+    },
+    {
+        "index": "3",
+        "isActive": true,
+        "productId": "p3",
+        "productName": "unicorn-mug",
+        "heading": "Unicorn Mug",
+        "infoText":"Unicorn on your favorate color mug. Suitable for gifting to your kids",
+        "price":"950",
+        "actionButtonText": "View Procuct",
+        "bgcolor": "#802bb1",
+        "image":""
+    },
+    {
+        "index": "4",
+        "isActive": true,
+        "productId": "p4",
+        "productName": "santa-charm",
+        "heading": "Christmas Special Santa Flatback",
+        "infoText":"Some information text related to the product",
+        "price":"1200 for 12 Items",
+        "actionButtonText": "View Procuct",
+        "bgcolor": "#e52e71",
+        "image":""
+    }
+]
